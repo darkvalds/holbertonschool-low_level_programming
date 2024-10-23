@@ -12,16 +12,16 @@ int main(void)
 {
 	int n;
 
-	srand(time(0)); /* Initialise le générateur de nombres aléatoires */
-	n = rand() - RAND_MAX / 2; /* Génère un nombre aléatoire */
+	srand(time(0)); 
+	n = rand() - RAND_MAX / 2;
 
 	if (n > 0)
 	{
-		printf("%d est positif\n", n);
+		printf("%d est positive\n", n);
 	}
 	else if (n == 0)
 	{
-		printf("%d est zéro\n", n);
+		printf("%d est zero\n", n);
 	}
 	else
 	{
