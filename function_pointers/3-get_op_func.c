@@ -1,5 +1,6 @@
 #include "3-calc.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * get_op_func - Selects the correct function to perform the operation.
@@ -24,10 +25,9 @@ int (*get_op_func(char *s))(int, int)
     while (ops[i].op != NULL)
 
     {
-        if (*(ops[i].op) == *s && s[1] == '\0')
-    {
+        if (strcmp(ops[i].op , s)== 0)
         return (ops[i].f);
-    }   
+       
     i++;
     }
     return (NULL);
