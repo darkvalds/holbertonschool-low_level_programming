@@ -1,0 +1,2 @@
+ varidic fuvtion
+
