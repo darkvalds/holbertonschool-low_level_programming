@@ -36,6 +36,5 @@ operator = get_op_func(argv[2]);
 }
 	result = operator (num1, num2);
 	printf("%d\n", result);
-
 	return (0);
 }
